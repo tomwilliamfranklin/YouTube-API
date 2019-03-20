@@ -23,22 +23,23 @@ $(document).ready(function () {
         SearchInput = document.getElementById("txtSearch").value;
         options = { part: 'snippet', key: key, maxResults: '20', q: SearchInput }
         loadVideos();
-
-
     });
 
+
+
     function populateVideos(data) {
-        $('main').html('');
-        $.each(data.items, function (i, item) {
+        $('main').html(''); //Clears the html so that previous results are removed
+        $.each(data.items, function (i, item) {  //loops through each item, and adds it to the results list 
             var thumb = item.snippet.thumbnails.high.url;
             var Title = item.snippet.title;
-            var Description = item.snippet.description;
+            var Description = item.snippet.description.substring(0, 150);
+            var id = item.id.videoId;
             if (Description == "") {
                 Description = "No Description";
             }
 
             $('main').append(`
-            <article class>
+            <article data-key="${id}">
                 <img src = "${thumb}" alt = "images/temp-thumbnail.png" class= "thumb">  </img> 
                 <div class="divDetails">
                     <h4>${Title}</h4>
@@ -48,6 +49,15 @@ $(document).ready(function () {
             `);
         });
 
+
+        $('main').on('click', 'article', function () {
+            var getID = $(this).attr('data-key');
+            $('#mainvideo').html(`
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/${getID}" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            `);
+            console.log(getID);
+        }); 
 
     }
 
