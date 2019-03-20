@@ -83,3 +83,4 @@ C:\Users\tomfr\Documents\GitHub\YouTube-API\YouTube-API\obj\Debug\YouTube-API.cs
 C:\Users\tomfr\Documents\GitHub\YouTube-API\YouTube-API\obj\Debug\YouTube-API.csproj.CopyComplete
 C:\Users\tomfr\Documents\GitHub\YouTube-API\YouTube-API\obj\Debug\YouTube-API.dll
 C:\Users\tomfr\Documents\GitHub\YouTube-API\YouTube-API\obj\Debug\YouTube-API.pdb
+C:\Users\tomfr\Documents\GitHub\YouTube-API\YouTube-API\obj\Debug\YouTube-API.csprojAssemblyReference.cache

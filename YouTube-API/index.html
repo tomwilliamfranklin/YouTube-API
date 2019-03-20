@@ -1,57 +1,28 @@
 <html lang="en" dir="ltr">
 <body>
-<div class="divBaseContainer">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+    <div class="divBaseContainer">
+        <link rel="stylesheet" type="text/css" href="Views/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+        <header></header>
 
-    <header></header>
 
 
-
-        <form class="sctSearchBar" method="POST" action="page.aspx">
-            <h3> Search Here: </h3>
-            <input type="text" id="textfield" name="textfield">
-            <input type="Submit" value="Search" />
-        </form>
+        <div class="head">
+            <h3 id="temp"> Search Here: </h3>
+            <input type="text" id="txtSearch" name="textfield">
+            <button id="btnClick">Click to Search</button>
+        </div>
 
         <main>
-            <article class="">
-                <img src="images/temp-thumbnail.png" alt="" class="thumb">
-                <div class="divDetails">
-                    <h4>Title</h4>
-                    <p>Description</p>
-                </div>
-            </article>
-            <article class="">
-                <img src="images/temp-thumbnail.png" alt="" class="thumb">
-                <div class="divDetails">
-                    <h4>Title</h4>
-                    <p>Description</p>
-                </div>
-            </article>
-            <article class="">
-                <img src="images/temp-thumbnail.png" alt="" class="thumb">
-                <div class="divDetails">
-                    <h4>Title</h4>
-                    <p>Description</p>
-                </div>
-            </article>
-            <article class="">
-                <img src="images/temp-thumbnail.png" alt="" class="thumb">
-                <div class="divDetails">
-                    <h4>Title</h4>
-                    <p>Description</p>
-                </div>
-            </article>
+        
         </main>
         <footer>
             <section class="sctFooter">
                 <h2> © Copyright Tom Franklin; Created for a 'Developer Challenge' </h2>
             </section>
         </footer>
-</div>
-
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
-<script src="JavaScript/search.js"></script>
+    </div>
+    <script src="Controllers/APIController.js"></script>
 </body>
 </html>
