@@ -1,32 +1,41 @@
 <html lang="en" dir="ltr">
 <body>
-    <div class="divBaseContainer">
-        <link rel="stylesheet" type="text/css" href="Views/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
-        <header></header>
+    <div class="grouped">
+        <div class="contents">
+            <link rel="stylesheet" type="text/css" href="Views/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+            <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+            <header></header>
 
+            <div class="mainvideo">
 
+                <section id="mainvideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="VideoWidget" allowfullscreen></iframe>
 
-        <div class="head">
-            <h3 id="temp"> Search Here: </h3>
-            <input type="text" id="txtSearch" name="textfield">
-            <button id="btnClick">Click to Search</button>
+                </section>
+
+            </div>
+
+            <div class="divBaseContainer">
+                <div class="head">
+                    <h3 id="temp"> Search Here: </h3>
+                    <input type="text" id="txtSearch" name="textfield">
+                    <button id="btnClick">Click to Search</button>
+                </div>
+
+                <main>
+
+                </main>
+                <footer></footer>
+            </div>
         </div>
-
-        <section id="mainvideo">
-          
-        </section>
-
-        <main>
-        
-        </main>
         <footer>
-            <section class="sctFooter">
-                <h2> © Copyright Tom Franklin; Created for a 'Developer Challenge' </h2>
-            </section>
+            <div class="sctFooter">
+                <h2> By Tom Franklin; Created for a 'Developer Challenge' </h2>
+            </div>
         </footer>
     </div>
-    <script src="Controllers/APIController.js"></script>
+        <script src="JavaScript/APIController.js"></script>
 </body>
 </html>
